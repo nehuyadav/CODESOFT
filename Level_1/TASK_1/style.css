@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+   height: 100px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 2px solid #dadada;
+   padding: 0 3vw;
+}
+.nav1{
+    padding: 1.5vw;
+}
+.nav2{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 3vw;
+   padding-right: 10px;
+}
+.nav2 i{
+    font-weight: 800;
+    display: none;
+}
+.nav h3{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.navbar button{
+    font-size: 1vw;
+    padding: 0.7vw 1.4vw;
+    background-color: #ff735c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.content{
+     height: calc(100% - 100px); 
+    width: 100%; 
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100dvh;
+    width: 55%;
+    padding: 5vw 5vw;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+}
+.left h1 span{
+    color: #ff735c;
+}
+.content button{
+    font-size: 1.5vw;
+    padding: 1.1vw 2.3vw;
+    background-color: #ff735c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.left p{
+    font-size: 1.2;
+    font-weight: 600;
+    color:#666;
+    width: 80%;
+    margin-top: 1.5vh;
+    margin-bottom: 3vw;
+}
+
+.right{
+height: 100vh;
+width: 45%;
+} 
+.right img{
+    height: 100vh;
+    width: 100%;
+}
+
+
+@media (max-width:600px){
+    .navbar{
+        height: 60px;
+        padding: 0.5vw;
+    }
+    .nav2 i{
+        display: block;
+        font-size: 5.1vw;
+        padding-right: 4.5vw; 
+    }
+    h2{
+        padding: 0vw 4vw;
+    }
+    h3{
+        display: none;
+    }
+    .navbar button{
+        display: none;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 35vh;
+        padding: 4vw 6vw;
+    }
+    .left h1{
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 7vw;
+        margin-bottom: 7vw;
+
+    }
+    .content button{
+        padding: 1vw 4vw ;
+        font-size: 3.5vw;
+        border-radius: 5px;
+        font-weight: 600;
+    }
+    .right{
+        width: 100%;
+        height: 50vh;
+    }
+}
